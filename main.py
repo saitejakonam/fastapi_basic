@@ -21,7 +21,7 @@ def get_tasks():
     return tasks
 
 # Get Task by ID
-@app.get("/tasks/{task_id}")
+@app.get("/tasks/{task_id}")   #path parameters
 def get_task(task_id: int):
     for task in tasks:
         if task.id == task_id:
